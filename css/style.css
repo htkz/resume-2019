@@ -1,0 +1,306 @@
+@import "./topNavBar.css";
+
+.icon {
+   width: 1em; height: 1em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+}
+
+body {
+  background-color: #EFEFEF;
+  margin: 0;
+}
+
+/* 清除浮动 */
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+hr {
+  height: 0;
+  border: none;
+  border-top: 1px solid #DEDEDE;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+ul, li, a {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.banner {
+  height: 515px;
+  background: url('../img/rs-cover.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.banner .mask {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100%;
+}
+
+.userCard {
+  max-width: 940px;
+  margin: 0 auto;
+  background-color: white;
+  margin-top: -344px;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.userCard .welcome {
+  position: relative;
+  background-color: #E6686E;
+  color: white;
+  padding: 4px 13px;
+  line-height: 22px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.userCard .welcome .triangle {
+  position: absolute;
+  top: 100%;
+  left: 5px;
+  display: block;
+  border: 5px solid transparent;
+  height: 0;
+  width: 0;
+  border-left-color: #E46970;
+  border-top-color: #E46970;
+}
+
+.userCard .container {
+  padding: 50px;
+}
+
+.userCard .text {
+  margin-left: 65px;
+  width: 470px;
+}
+
+.userCard .text h1 {
+  margin-top: 16px;
+}
+
+.userCard .text hr {
+  margin: 24px 0;
+}
+
+.userCard dl dt,
+.userCard dl dd {
+  float: left;
+  padding: 5px 0;
+}
+
+.userCard dl dt {
+  width: 30%;
+  font-weight: bold;
+}
+
+.userCard dl dd {
+  width: 70%;
+  color: #9da0a7;
+}
+
+.userCard .media svg{
+  width: 30px;
+  height: 30px;
+  fill: white;
+}
+
+.userCard .media {
+  background-color: #E6686E;
+  text-align: center;
+  padding: 22px;
+}
+
+.userCard .media a svg {
+  vertical-align: top;
+}
+
+.userCard .media a {
+  display: inline-block;
+  border-radius: 50%;
+  width: 40px;
+  line-height: 30px;
+  padding: 5px 0;
+  margin: 0 25px;
+
+}
+
+.userCard .media a:hover {
+  background-color: #CF5D5F;
+}
+
+main .downloadResume {
+  text-align: center;
+  margin-top: 32px;
+}
+
+main .downloadResume a {
+  font-size: 14px;
+  line-height: 16px;
+  padding: 21px 55px;
+  border: 1px solid #CBCDCF;
+  display: inline-block;
+  background-color: #EFEFEF;
+  color: #3D4451;
+  font-weight: bold;
+  border-radius: 2px;
+  transition: box-shadow 0.2s;
+}
+
+main .downloadResume a:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+main .selfIntro {
+  text-align: center;
+  margin-top: 32px;
+}
+
+main .selfIntro p {
+  max-width: 940px;
+  margin: 0 auto;
+  font-family: "kai";
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+section.skills,
+section.portfolio {
+  max-width: 940px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+section.skills h2,
+section.portfolio h2 {
+  text-align: center;
+  color: #3d4451;
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+section.skills h3 {
+  font-size: 14px;
+  line-height: 1.1;
+}
+
+section.skills ol {
+  background-color: white;
+  padding: 42px 50px 10px;
+  margin-top: 30px;
+}
+
+section.skills li {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+section.skills li:nth-child(odd) {
+  padding-right: 40px;
+}
+
+section.skills .progressBar {
+  height: 5px;
+  background-color: #FAE1E2;
+  border-radius: 2px;
+  margin: 4px 0 40px;
+}
+
+section.skills .progressBar .progress {
+  height: 100%;
+  width: 50%;
+  background-color: #E6686E;
+  border-radius: 2px;
+}
+
+section.portfolio h2 {
+  margin-bottom: 32px;
+}
+
+section.portfolio nav {
+  display: inline-block;
+}
+
+section.portfolio .wrapper {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+section.portfolio nav ul {
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+section.portfolio nav ul li {
+  padding: 0 30px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+section.portfolio nav .bar {
+  height: 5px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+section.portfolio .bar .bar-inner {
+  height: 100%;
+  background-color: #E6686E;
+  width: 30%;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+section.portfolio .bar.state-1 .bar-inner {
+  margin-left: 0;
+  width: 90px;
+}
+
+section.portfolio .bar.state-2 .bar-inner {
+  margin-left: 90px;
+  width: 100px;
+}
+
+section.portfolio .bar.state-3 .bar-inner {
+  margin-left: 190px;
+  width: 97px;
+}
+
+section.portfolio .works {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+section.portfolio .works .smallPics {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* margin-left: 20px; */
+}
+
+
+.test {
+  height: 400px;
+}

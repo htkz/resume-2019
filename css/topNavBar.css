@@ -1,0 +1,121 @@
+
+/* 浮动 */
+.topNavBar nav > ul > li {
+  float: left;
+  margin: 0 16px;
+}
+
+.topNavBar ul > li > a {
+  color: inherit;
+  font-weight: bold;
+  padding: 3px;
+  display: block;
+}
+
+.topNavBar ul > li {
+  position: relative;
+}
+
+.topNavBar ul > li:hover > a::after,
+.topNavBar ul > li.current > a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #E46970;
+  top: 100%;
+  left: 0;
+  animation: slideIn linear 0.2s;
+  border-radius: 2px;
+}
+
+@keyframes slideIn {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.topNavBar {
+  padding: 30px 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.5s;
+  z-index: 1;
+}
+
+.topNavBar .logo {
+  font-size: 24px;
+  font-family: "Arial Black";
+  color: white;
+}
+
+.topNavBar .rs {
+  margin-right: -3px;
+  color: #E6686E;
+}
+
+.topNavBar .card {
+  color: #9A9DA2;
+}
+
+.topNavBar.notTop {
+  background: white;
+  color: #3d4451;
+  padding: 20px 16px;
+  /* x偏移量 | y偏移量 | 阴影模糊半径 | 阴影扩散半径 | 阴影颜色 */
+  box-shadow: 0 2px 4px  rgba(0, 0, 0, 0.25);
+}
+
+#nav-works ol {
+  margin-top: 3px;
+  padding: 5px 0;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  white-space: nowrap;
+  text-align: right;
+  background: white;
+  color: black;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+  display: none;
+  border-radius: 1px;
+}
+
+#nav-works ol li {
+  padding: 2px 10px;
+  margin: 8px 0;
+}
+
+#nav-works ol li:hover {
+  color: #E46970;
+  background: #eee;
+}
+
+#nav-works:hover ol {
+  display: block;
+  animation: slideRight 0.2s linear;
+}
+
+@keyframes slideRight {
+  0% {
+    margin-right: 100%;
+  }
+  100% {
+    margin-right: 0;
+  }
+}
+
+[data-distance] {
+  transition: all 1s;
+}
+
+.slideDown {
+  transform: translateY(100px);
+}
